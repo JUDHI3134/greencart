@@ -22,7 +22,7 @@ await connectCloudinary();
 
 //allow multiple origins
 const allowedOrigin = [
-    "http://localhost:5173"
+    "http://localhost:5173", "https://greencart-two-alpha.vercel.app"
 ]
 
 app.post('/stripe',express.raw({type: 'application/json'}), stripeWebhooks)
